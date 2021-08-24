@@ -56,8 +56,8 @@ fun ContainerNavHost(mainViewModel: MainViewModel = viewModel()) {
         composable("Capsules") {
             TextNavHost("Capsules")
         }
-        composable("crew") {
-            TextNavHost("crew")
+        composable("Crew") {
+            TextNavHost("Crew")
         }
     }
 }
