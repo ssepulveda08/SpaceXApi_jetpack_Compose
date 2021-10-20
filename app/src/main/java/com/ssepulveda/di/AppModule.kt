@@ -3,6 +3,7 @@ package com.ssepulveda.di
 import com.ssepulveda.data.HistoryRemoteDataSource
 import com.ssepulveda.data.RocketsRemoteDataSource
 import com.ssepulveda.network.services.SpaceXService
+import com.ssepulveda.provider.FavoriteProvider
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -57,5 +58,9 @@ object AppModule {
     @Provides
     @Singleton
     fun provideRocketsRemoteDataSource(service: SpaceXService) = RocketsRemoteDataSource(service)
+
+    @Provides
+    @Singleton
+    fun provideFavoriteProvider() = FavoriteProvider()
 
 }
